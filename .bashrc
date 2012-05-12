@@ -37,6 +37,7 @@ function parse_git_branch ()
 PS1="${c_green}\u${c_sgr0}:${c_green}\W\$(parse_git_branch)${c_green}\$${c_sgr0} "
 
 export EDITOR=vim
+export INPUTRC=~/.inputrc
 
 # System specific settings are set in .bashrc_local
 if [ -r "$HOME/.bashrc_local" ]
