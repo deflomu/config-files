@@ -1,0 +1,2 @@
+#!/bin/bash
+users | tr " " "\n" | sort -u | tr "\n" " " | sed -e 's/ /, /g;s/, $/\n/'

@@ -3,9 +3,9 @@ vbell off
 # enable scrolling
 termcapinfo xterm* ti@:te@ 
 
-backtick 1 10 10 /usr/share/screen/scripts/mem
-backtick 2 10 10 /usr/share/screen/scripts/swap
-backtick 3 30 30 /usr/share/screen/scripts/who
+backtick 1 10 10 $HOME/.screen/mem
+backtick 2 10 10 $HOME/.screen/swap
+backtick 3 30 30 $HOME/.screen/who
 
 hardstatus alwayslastline
 hardstatus string '%{= kG}%H%{W}: %{y}%1`%{W}|%{y}%2` %l%=%{w}%-Lw%{r}%n*%f%t%{w}%+Lw%=%{G}User%{W}: %{y}%3` %{B}%d.%m.%Y %{W}%c:%s'
