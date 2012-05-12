@@ -1,1 +1,1 @@
-alias s='su -p root'
+alias s='su --preserve-environment root'
