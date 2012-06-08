@@ -12,9 +12,9 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # define colors used in PS1
-c_red="$(tput setaf 1)"
-c_green="$(tput setaf 2)"
-c_sgr0="$(tput sgr0)"
+c_red="\[$(tput setaf 1)\]"
+c_green="\[$(tput setaf 2)\]"
+c_sgr0="\[$(tput sgr0)\]"
 
 # get current git branch and indicate if it's dirty
 function parse_git_branch ()
