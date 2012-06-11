@@ -1,3 +1,8 @@
+# elm's bashrc
+# Inspired by:
+# https://github.com/l0b0/tilde/blob/master/.bashrc
+# https://github.com/git/git/tree/master/contrib/completion
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -16,25 +21,15 @@ c_red="\[$(tput setaf 1)\]"
 c_green="\[$(tput setaf 2)\]"
 c_sgr0="\[$(tput sgr0)\]"
 
-# get current git branch and indicate if it's dirty
-function parse_git_branch ()
-{
-	if git rev-parse --git-dir >/dev/null 2>&1
-	then
-		gitver=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
-		if git diff --quiet 2>/dev/null >&2
-		then
-			gitver=${c_sgr0}'('$gitver')'
-		else
-			gitver=${c_sgr0}'('${c_red}$gitver${c_sgr0}')'
-		fi
-	else
-		return 0
-	fi
-	echo $gitver
-}
+# Load git-completion.bash
+source "$HOME/.git-completion.bash"
+# Display dirty state, if something is stashed and of we are ahead or behind of
+# upstream.
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUPSTREAM="auto"
 
-PS1="${c_green}\u${c_sgr0}:${c_green}\W\$(parse_git_branch)${c_green}\$${c_sgr0} "
+PS1="${c_green}\u${c_sgr0}:${c_green}\W${c_sgr0}\$(__git_ps1 '(%s)')${c_green}\$${c_sgr0} "
 
 # set exports
 export EDITOR=vim
