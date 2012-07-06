@@ -20,3 +20,14 @@ set shiftwidth=2
 " Show cursor position
 set ruler
 
+" Use utf-8
+set encoding=utf-8
+
+" Enable pathogen
+call pathogen#infect()
+
+" Set fancy powerline
+let g:Powerline_symbols = 'fancy'
+
+" Always display powerline
+set laststatus=2
