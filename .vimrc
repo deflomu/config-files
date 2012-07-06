@@ -38,4 +38,9 @@ set laststatus=2
 :set listchars=eol:↵,tab:>-,trail:~,extends:>,precedes:<
 
 " Show rule in column 81
-set colorcolumn=81
+if exists('+colorcolumn')
+	set colorcolumn=81
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
