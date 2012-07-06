@@ -17,6 +17,8 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 
+filetype plugin indent on
+
 " Show cursor position
 set ruler
 
@@ -31,3 +33,9 @@ let g:Powerline_symbols = 'fancy'
 
 " Always display powerline
 set laststatus=2
+
+" Change special chars for :set list
+:set listchars=eol:↵,tab:>-,trail:~,extends:>,precedes:<
+
+" Show rule in column 81
+set colorcolumn=81
