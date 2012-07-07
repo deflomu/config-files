@@ -35,6 +35,8 @@ PS1="${c_green}\u${c_sgr0}:${c_green}\W${c_sgr0}\$(__git_ps1 '(%s)')${c_green}\$
 export EDITOR=vim
 export INPUTRC=~/.inputrc
 export CLICOLOR=1
+# set most as pager if available
+command -v most >/dev/null 2>&1 && export PAGER=most
 
 # System specific settings are set in .bashrc_local
 if [ -r "$HOME/.bashrc_local" ]
