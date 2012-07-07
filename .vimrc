@@ -1,3 +1,6 @@
+" Enable pathogen
+call pathogen#infect()
+
 " Highlight sytax
 syntax on
 " Show line numbers
@@ -24,9 +27,6 @@ set ruler
 
 " Use utf-8
 set encoding=utf-8
-
-" Enable pathogen
-call pathogen#infect()
 
 " Set fancy powerline
 let g:Powerline_symbols = 'fancy'
