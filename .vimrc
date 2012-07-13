@@ -39,8 +39,12 @@ set laststatus=2
 set listchars=eol:↵,tab:▸\ ,trail:~,extends:>,precedes:<
 
 set modelines=0
-set relativenumber
-set undofile
+if exists('+relativenumber')
+	set relativenumber
+endif
+if exists('+undofile')
+	set undofile
+endif
 set wildmenu
 set wildmode=list:longest
 set ttyfast
