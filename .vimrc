@@ -18,8 +18,10 @@ set smartindent
 " Use indent of previous line if creating a new line
 set autoindent
 " Show tab as two spaces
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
+" Use spaces instead of tab
+set expandtab
 
 filetype plugin indent on
 
