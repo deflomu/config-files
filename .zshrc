@@ -8,3 +8,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Load and run compinit
 autoload -U compinit
 compinit -i
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
