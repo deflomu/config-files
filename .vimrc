@@ -1,7 +1,3 @@
-" Enable pathogen
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-
 " Highlight sytax
 syntax on
 " Show line numbers
@@ -84,4 +80,14 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 set mouse=a
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
