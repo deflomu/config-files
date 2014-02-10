@@ -11,3 +11,6 @@ setopt long_list_jobs
 ## pager
 export PAGER="less -R"
 export LC_CTYPE=$LANG
+
+## editor
+export EDITOR="vim"
