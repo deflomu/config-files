@@ -1,0 +1,11 @@
+[include]
+    path = .gitconfig-local
+[core]
+    editor = vim
+    precomposeunicode = true
+[color]
+	ui = true
+[merge]
+	tool = opendiff
+[push]
+	default = simple
