@@ -9,5 +9,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 autoload -U compinit
 compinit -i
 
+# Android
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
