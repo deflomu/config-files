@@ -2,7 +2,8 @@
     path = .gitconfig-local
 [core]
     editor = vim
-    precomposeunicode = true
+	precomposeunicode = true
+	excludesfile = /Users/flmu/.gitignore_global
 [color]
 	ui = true
 [merge]
