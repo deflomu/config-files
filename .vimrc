@@ -88,6 +88,5 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
