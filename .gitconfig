@@ -8,5 +8,6 @@
 	ui = true
 [merge]
 	tool = opendiff
-[push]
-	default = simple
+[user]
+	name = elm
+	email = elm@skweez.net
