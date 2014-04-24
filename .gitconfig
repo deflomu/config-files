@@ -3,11 +3,7 @@
 [core]
     editor = vim
 	precomposeunicode = true
-	excludesfile = /Users/flmu/.gitignore_global
 [color]
 	ui = true
 [merge]
 	tool = opendiff
-[user]
-	name = elm
-	email = elm@skweez.net
