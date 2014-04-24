@@ -36,6 +36,14 @@ set laststatus=2
 " Change special chars for :set list
 set listchars=eol:↵,tab:▸\ ,trail:~,extends:>,precedes:<
 
+" Set and create vim temp/undo/backup file dir
+silent execute '!mkdir -p ~/.vim/temp'
+silent execute '!mkdir -p ~/.vim/backup'
+silent execute '!mkdir -p ~/.vim/undo'
+set directory=~/.vim/temp//
+set backupdir=~/.vim/backup//
+set undodir=~/.vim/undo//
+
 set modelines=0
 if exists('+relativenumber')
 	set relativenumber
