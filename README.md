@@ -10,4 +10,5 @@ Install
 * homegit config core.excludesfile ~/.home.gitignore
 * cp .gitconfig-local.sample .gitconfig-local
 * vim .gitconfig-local
+* vim -> :BundleInstall
 
