@@ -23,3 +23,7 @@ zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 precmd () { vcs_info }
 
 PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m%{$reset_color%}:%{$fg[green]%}%1~%{$reset_color%}${vcs_info_msg_0_}%{$fg[green]%}$ %{$reset_color%}'
+
+# Enable time reporting for commands that take longer than 10 seconds to
+# execute
+REPORTTIME=10

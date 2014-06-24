@@ -3,7 +3,10 @@
 [core]
     editor = vim
 	precomposeunicode = true
+	autocrlf = input
 [color]
 	ui = true
 [merge]
 	tool = opendiff
+[help]
+	autocorrect = 1
