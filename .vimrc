@@ -30,6 +30,11 @@ set encoding=utf-8
 " Set fancy powerline
 let g:Powerline_symbols = 'fancy'
 
+" Always show location view if a syntax error is detected
+" let g:syntastic_auto_loc_list = 1
+" Jump to first syntax error on save or open
+let g:syntastic_auto_jump = 2
+
 " Always display powerline
 set laststatus=2
 
@@ -100,4 +105,5 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/syntastic'
 

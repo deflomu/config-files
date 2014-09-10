@@ -14,3 +14,6 @@ export LC_CTYPE=$LANG
 
 ## editor
 export EDITOR="vim"
+
+## Disable mail check
+MAILCHECK=0
