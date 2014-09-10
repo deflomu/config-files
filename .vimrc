@@ -44,6 +44,9 @@ set directory=~/.vim/temp//
 set backupdir=~/.vim/backup//
 set undodir=~/.vim/undo//
 
+" Do not backup temp crontab files. Wihtout this 'crontab -e' will not work.
+set backupskip=/tmp/crontab*,/private/tmp/crontab*
+
 set modelines=0
 if exists('+relativenumber')
 	set relativenumber
