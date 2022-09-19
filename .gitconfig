@@ -4,9 +4,23 @@
     editor = vim
 	precomposeunicode = true
 	autocrlf = input
+	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [merge]
 	tool = opendiff
 [help]
 	autocorrect = 1
+[pull]
+	rebase = true
+[remote "origin"]
+	prune = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+    gpgsign = true
