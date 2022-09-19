@@ -3,7 +3,8 @@
 .AppleDouble
 .LSOverride
 # Icon must ends with two \r.
-Icon
+Icon
+
 # Thumbnails
 ._*
 # Files that might appear on external disk
@@ -14,7 +15,6 @@ Icon
 *.pydevproject
 .metadata
 .gradle
-bin/
 tmp/
 *.tmp
 *.bak
@@ -31,7 +31,7 @@ local.properties
 .cproject
 # PDT-specific
 .buildpath
-# sbteclipse plugin 
+# sbteclipse plugin
 .target
 # TeXlipse plugin
 .texlipse
@@ -106,10 +106,12 @@ Session.vim
 *.swp
 
 # *.lock - this is used and abused by many editors for many different things.
-#    For the main ones I use (e.g. Eclipse), it should be excluded 
+#    For the main ones I use (e.g. Eclipse), it should be excluded
 #    from source-control, but YMMV
 
 *.lock
+# Explicitly allow node package manager lock files
+!yarn.lock
 
 #
 # profile - REMOVED temporarily (on double-checking, this seems incorrect; I can't find it in OS X docs?)
@@ -118,7 +120,7 @@ Session.vim
 
 ####
 # Xcode temporary files that should never be committed
-# 
+#
 # NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
 
 *~.nib
@@ -262,3 +264,12 @@ xcuserdata/**/*
 *.msi
 *.msm
 *.msp
+# node.js
+local.js
+local-*.js
+# Codeship and Jet
+codeship.aes
+aws-deployment.env
+npm-deployment.env
+
+**/.idea
